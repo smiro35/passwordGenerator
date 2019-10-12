@@ -6,20 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
 <body>
-    <header>
-        <h1>Password Generator</h1>
-    </header>
-    <h2>Generate a Password</h2>
-    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-    <button id="generate">Generate Password</button>
-    <button id="copy">
+    <!-- start a container -->
+    <div class="container">
+        <!-- start a row -->
+
+        <div class="row">
+
+            <!-- first measure div -->
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+                <header>
+                    <h1>Password Generator</h1>
+                </header>
+                <h2>Generate a Password</h2>
+                <br />
+                <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+                <br />
+                <button id="gen">Generate Password</button>
+                <button id="copy">
       Copy to Clipboard
     </button>
+                <!-- <div id="pass">here</div> -->
+
+                <!-- end of first measure div -->
+            </div>
+
+            <!-- end main row -->
+        </div>
+
+        <!-- end of main container -->
+    </div>
+
+
+    <script>
+        // create a variable with a string of possible characters.
+        var options = ("!#$%&'()*+,-./:;<=>?@[\]^_`{|}~abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
+
+
+        alert("password should be over 8 characters long");
+
+        var user = prompt("how long do you want your password to be?");
+
+        if (user < 8) {
+            alert("please pick a number above 8");
+
+            prompt("how long do you want your password to be?");
+
+
+
+
+        } else {
+            alert("welcome!");
+        };
+
+        var specialCharac = confirm("Want any special characters?");
+
+        var numb = confirm("Want any numbers?");
+
+        var upper = confirm("upper case alphabets?");
+
+        var lower = confirm("lower case lower case alphabets?");
+
+
+        if (specialCharac === false && numb === false && upper === false && lower === false) {
+
+            alert("TRY AGAIN! You must choose ok for atleast one of the options!");
+        };
+
+
+        function generate() {
+
+            for (p = 0; p = user; p++) {
+
+                var p = Math.floor(Math.random() * user.length);
+
+                password = p.charAt(choice);
+
+                console.log(password);
+
+            }
+
+        }
+
+
+        generate();
+    </script>
+
+    <!-- <script>
+        var x = "0123456789abcdefghijklmnopqrstuvwxyz";
+
+        function g() {
+
+            alert("password should be more than 8 characters")
+
+            // var begin = alert(" password should be between 8 to 128 characters");
+
+            prompt("How long do you want the password to be?");
+
+            // var charac = confirm("special characters?");
+
+            // var numb = confirm("numbers?");
+
+            // var way = confirm("uppercase?");
+
+            // if (prompt === false && charac === false && numb === false && way === false) {
+
+            //     alert("you must click ok for atleast one of the optins, please reload page and try again")
+
+        }
+
+
+        // Var l = prompt;
+
+
+        for (i = 0; i < l; i++) {
+
+            var c = Math.floor((Math.random() * length) + 0);
+            password += x.charAt(c);
+            console.log(c);
+
+        }
+
+
+        // }
+        g();
+        console.log();
+    </script> -->
+
 </body>
 
 </html>

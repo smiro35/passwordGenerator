@@ -5,27 +5,30 @@ html {
 
 body {
     text-align: center;
+    width: 100%;
+    background-color: antiquewhite;
 }
 
 #generate {
+    padding-right: 10px;
     background-color: red;
 }
 
-h1 {
-    margin: 20px;
-    text-align: center;
+header {
+    background-color: azure;
     font-size: xx-large;
     font-weight: bolder;
 }
 
-h2 {
-    padding: 20px;
-}
-
 textarea {
-    border: dashed;
+    border: dotted;
     width: 500px;
     height: 100px;
     align-items: center;
     padding: 20px;
+}
+
+button {
+    border-radius: 20px;
+    border-spacing: 4px;
 }
