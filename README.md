@@ -1,1 +1,1 @@
-# passwordGenerator
+So far I have understood the first part of the assignment, but have failed to get the generator to work. The goal is to get this password generator to spit out random passwords for the user based on their answers.
